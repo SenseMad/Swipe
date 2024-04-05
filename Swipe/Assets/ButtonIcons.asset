@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e843ee075e304954891d1ba30cd9a49a, type: 3}
+  m_Name: ButtonIcons
+  m_EditorClassIdentifier: 
+  _buttons:
+  - _typeDevice: 0
+    _buttons:
+    - TypeButton: 0
+      SpriteButton: {fileID: 545154316, guid: 50cf20fd60170cd4da9734414fc3ac5d, type: 3}
+    - TypeButton: 1
+      SpriteButton: {fileID: 4828457, guid: 50cf20fd60170cd4da9734414fc3ac5d, type: 3}
+    - TypeButton: 2
+      SpriteButton: {fileID: -1747753161, guid: 50cf20fd60170cd4da9734414fc3ac5d, type: 3}
+    - TypeButton: 3
+      SpriteButton: {fileID: -1062659340, guid: 1810025a29baf564faab24f7e3fe2c44, type: 3}
+    - TypeButton: 4
+      SpriteButton: {fileID: -1711339816, guid: 1810025a29baf564faab24f7e3fe2c44, type: 3}
