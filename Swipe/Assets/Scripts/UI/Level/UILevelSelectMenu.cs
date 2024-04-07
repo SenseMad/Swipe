@@ -227,7 +227,7 @@ namespace Sokoban.UI
       levelManager.OnPauseEvent?.Invoke(false);
 
       gameManager.ProgressData.LocationLastLevelPlayed = levelData.Location;
-      gameManager.ProgressData.IndexLastLevelPlayed = levelData.LevelNumber - 1;
+      gameManager.ProgressData.IndexLastLevelPlayed = levelData.LevelNumber;
 
       gameManager.SaveData();
 

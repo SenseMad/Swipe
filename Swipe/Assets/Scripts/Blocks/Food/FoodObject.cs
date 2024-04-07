@@ -44,7 +44,7 @@ public class FoodObject : InteractiveObjects
     if (Sound != null)
       AudioManager.Instance.OnPlaySound?.Invoke(Sound);
 
-    //LevelManager.Instance.IsLevelComplete();
+    LevelManager.Instance.IsFoodCollected();
 
     gameObject.SetActive(false);
   }

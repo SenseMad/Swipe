@@ -82,7 +82,7 @@ namespace Sokoban.UI
         else
           shopButton.NotPurchased();
 
-        shopButton.Button.onClick.AddListener(() => SelectSkin(skinData));
+        shopButton.Button.onClick.AddListener(() => SelectSkin(skinData, shopButton));
 
         _listButtons.Add(shopButton.Button);
         listShopButtons.Add(shopButton);
@@ -111,7 +111,7 @@ namespace Sokoban.UI
 
     //======================================
 
-    private void SelectSkin(SkinData parSkinData)
+    private void SelectSkin(SkinData parSkinData, ShopButton parShopButton)
     {
       if (gameManager.ProgressData.PurchasedSkins.Contains(parSkinData.IndexSkin))
       {
@@ -124,15 +124,7 @@ namespace Sokoban.UI
 
           gameManager.ProgressData.CurrentActiveIndexSkin = parSkinData.IndexSkin;
 
-          foreach (var newShopButton in listShopButtons)
-          {
-            if (newShopButton.IndexSkin != gameManager.ProgressData.CurrentActiveIndexSkin)
-              continue;
-
-            newShopButton.Select();
-            break;
-          }
-
+          parShopButton.Select();
           break;
         }
 
@@ -142,15 +134,31 @@ namespace Sokoban.UI
         return;
       }
 
-      if (gameManager.ProgressData.AmountFoodCollected < parSkinData.PriceSkin)
-        return;
+      BuySkin(parSkinData, parShopButton);
+    }
 
-      gameManager.ProgressData.AmountFoodCollected -= parSkinData.PriceSkin;
+    private void BuySkin(SkinData parSkinData, ShopButton parShopButton)
+    {
+      if (!TryAmountFood(parSkinData.PriceSkin))
+      {
+        Debug.LogWarning($"[Недостаточно денег] Чтобы купить скин, необходимо {parSkinData.PriceSkin}, а у вас {gameManager.ProgressData.AmountFoodCollected}");
+        return;
+      }
+
       gameManager.ProgressData.PurchasedSkins.Add(parSkinData.IndexSkin);
 
-      listShopButtons[parSkinData.IndexSkin].UnSelect();
+      parShopButton.UnSelect();
 
       gameManager.SaveData();
+    }
+
+    private bool TryAmountFood(int parValue)
+    {
+      if (gameManager.ProgressData.AmountFoodCollected < parValue)
+        return false;
+
+      gameManager.ProgressData.AmountFoodCollected -= parValue;
+      return true;
     }
 
     //======================================

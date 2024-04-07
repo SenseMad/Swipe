@@ -213,14 +213,6 @@ namespace Sokoban.LevelManagement
 
     public bool IsLevelComplete()
     {
-      /*var foodObjects = _gridLevel.GetListFoodObjects();
-      tempAmountFoodCollected++;
-      for (int i = 0; i < foodObjects.Count; i++)
-      {
-        if (!foodObjects[i].IsFoodCollected)
-          return false;
-      }*/
-
       var groundObjects = _gridLevel.GetListGroundObjects();
       foreach (var groundObject in groundObjects)
       {
@@ -230,6 +222,11 @@ namespace Sokoban.LevelManagement
 
       LevelComplete();
       return true;
+    }
+
+    public void IsFoodCollected()
+    {
+      tempAmountFoodCollected++;
     }
 
     public void SetPause(bool parValue)
@@ -294,6 +291,9 @@ namespace Sokoban.LevelManagement
       if (levelData != null)
         _currentLevelData = levelData;
 
+      gameManager.ProgressData.LocationLastLevelPlayed = levelData.Location;
+      gameManager.ProgressData.IndexLastLevelPlayed = levelData.LevelNumber;
+
       IsNextLevelData?.Invoke(_currentLevelData);
 
       isCameraRotation = true;
@@ -350,15 +350,20 @@ namespace Sokoban.LevelManagement
 
     public void MenuLevel()
     {
-      ProgressData progress = gameManager.ProgressData;
-
-      LevelData oldLevelData = _currentLevelData;
-      _currentLevelData = Levels.GetLevelData(progress.LocationLastLevelPlayed, progress.IndexLastLevelPlayed + 1);
-      _currentLevelData ??= oldLevelData;
+      GetLastLevelData();
 
       _gridLevel.CreatingLevelGrid();
       LevelCompleted = true;
       IsLevelMenu = true;
+    }
+
+    private void GetLastLevelData()
+    {
+      ProgressData progress = gameManager.ProgressData;
+      LevelData oldLevelData = _currentLevelData;
+
+      _currentLevelData = Levels.GetLevelData(progress.LocationLastLevelPlayed, progress.IndexLastLevelPlayed);
+      _currentLevelData ??= oldLevelData;
     }
 
     public void SkinReplace()
@@ -368,16 +373,13 @@ namespace Sokoban.LevelManagement
 
     public void ExitMenu()
     {
-      //_gridLevel.DeletingLevelObjects();
+      GetLastLevelData();
       _gridLevel.CreatingLevelGrid();
       IsLevelMenu = true;
 
       _pauseMenu.SetActive(false);
       _levelCompleteMenu.SetActive(false);
 
-      //var targetObject = new GameObject("targetObject");
-      //targetObject.transform.position = new Vector3(3, 2, 6f);
-      //cinemachineVirtual.Follow = targetObject.transform;
       isCameraRotation = true;
 
       IsMenu?.Invoke();
@@ -386,8 +388,6 @@ namespace Sokoban.LevelManagement
       PanelController.Instance.SetActivePanel(_menuPanel);
 
       IsLevelRunning = false;
-
-      //Destroy(targetObject, 5f);
     }
 
     private void OpenNextLevel()
