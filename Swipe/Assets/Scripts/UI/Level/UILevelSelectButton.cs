@@ -6,9 +6,6 @@ using Sokoban.LevelManagement;
 
 namespace Sokoban.UI
 {
-  /// <summary>
-  /// Пользовательский интерфейс кнопка выбора уровня
-  /// </summary>
   public class UILevelSelectButton : MonoBehaviour
   {
     [SerializeField, Tooltip("Текст названия уровня")]
@@ -16,6 +13,8 @@ namespace Sokoban.UI
 
     [SerializeField, Tooltip("Image замка")]
     private Image _imageLock;
+
+    [SerializeField] private Image _background;
 
     [SerializeField, Tooltip("Спрайт стандартный")]
     private Sprite _spriteStandart;
@@ -26,42 +25,20 @@ namespace Sokoban.UI
 
     //--------------------------------------
 
-    private Image imageButton;
-
-    //private Animator animator;
+    [SerializeField] private Animator animator;
 
     //======================================
 
     public Button Button { get; set; }
 
-    /// <summary>
-    /// True, если уровень открыт
-    /// </summary>
-    //public bool IsLevelOpen { get; private set; }
-
     //======================================
 
-    private void Awake()
-    {
-      imageButton = GetComponent<Image>();
-
-      //animator = GetComponent<Animator>();
-    }
-
-    //======================================
-
-    /// <summary>
-    /// Инициализация кнопки выбора локации
-    /// </summary>
     public void Initialize(LevelData levelData)
     {
       Button.name = $"{levelData.LevelNumber}";
       _textLevelName.text = $"{levelData.LevelNumber}";
     }
 
-    /// <summary>
-    /// Изменить цвет
-    /// </summary>
     public void ChangeColor()
     {
       _textLevelName.color = ColorsGame.STANDART_COLOR;
@@ -74,9 +51,12 @@ namespace Sokoban.UI
 
     public void ChangeSprite(bool parValue)
     {
-      imageButton.sprite = parValue ? _spriteSelected : _spriteStandart;
+      animator.enabled = parValue;
 
-      _selectImage.SetActive(parValue);
+      animator.Rebind();
+      //_background.sprite = parValue ? _spriteSelected : _spriteStandart;
+
+      //_selectImage.SetActive(parValue);
 
       //animator.enabled = parValue;
     }

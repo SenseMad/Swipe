@@ -2,20 +2,11 @@ using UnityEngine;
 
 public static class ColorsGame
 {
-  /// <summary>
-  /// Стандартный цвет
-  /// </summary>
-  public static readonly Color32 STANDART_COLOR = new Color32(255, 255, 255, 255);
-  /// <summary>
-  /// Выбранный цвет
-  /// </summary>
-  public static readonly Color32 SELECTED_COLOR = new Color32(0, 255, 172, 255);
-  /// <summary>
-  /// Выключенный цвет
-  /// </summary>
-  public static readonly Color32 DISABLE_COLOR = new Color32(90, 90, 90, 255);
-  /// <summary>
-  /// Выбранный цвет (Черный)
-  /// </summary>
-  public static readonly Color32 SELECTED_COLOR_BLACK = new Color32(0, 0, 0, 200);
+  public static readonly Color32 STANDART_COLOR = new(255, 255, 255, 255);
+
+  public static readonly Color32 SELECTED_COLOR = new(150, 225, 119, 255);
+
+  public static readonly Color32 DISABLE_COLOR = new(142, 142, 142, 255);
+
+  public static readonly Color32 SELECTED_COLOR_BLACK = new(0, 0, 0, 200);
 }
