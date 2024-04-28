@@ -52,7 +52,7 @@ MonoBehaviour:
   _objectPosition: {x: 0, y: 0, z: 0}
   _nameObject: 
   _spriteObject: {fileID: 0}
-  _sound: {fileID: 8300000, guid: bc9476e742993b74abc79e7b7625bffa, type: 3}
+  _sound: {fileID: 8300000, guid: 3adcbfb65fe69ad448e849a717265341, type: 3}
   _listFoods:
   - {fileID: 919132149155446097, guid: c13bbd058804d8a48bd132a1059f5c9a, type: 3}
   - {fileID: 919132149155446097, guid: 994161cae52f5c249b66908711dfd6dd, type: 3}
@@ -83,13 +83,13 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.9, y: 0.9, z: 0.9}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &3820861667148580924
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103,6 +103,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -119,6 +120,7 @@ GameObject:
   - component: {fileID: 3564449593218934165}
   - component: {fileID: 3564449593218934164}
   - component: {fileID: 3564449593218934163}
+  - component: {fileID: 5171408028265826510}
   m_Layer: 0
   m_Name: Mesh
   m_TagString: Untagged
@@ -166,6 +168,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -191,3 +195,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5171408028265826510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3564449593218934161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73585ec43e22fe9448f7e396a6620c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -94,7 +94,7 @@ public class PlayerObjects : Block
       RemoveRigidbody();
 
     if (!GridEditor.GridEditorEnabled)
-      levelManager.CinemachineVirtual.Follow = transform;
+      levelManager.CinemachineCamera.Follow = transform;
   }
 
   private void OnEnable()
@@ -178,7 +178,7 @@ public class PlayerObjects : Block
     isMoveButtonPressed = true;
     axisMove = axisMovement;
 
-    var cinemachineVirtualDirection = levelManager.CinemachineVirtual.transform.TransformDirection(axisMove);
+    var cinemachineVirtualDirection = levelManager.CinemachineCamera.transform.TransformDirection(axisMove);
     Vector3 direction = new(cinemachineVirtualDirection.x, 0.0f, cinemachineVirtualDirection.z);
 
     isMoveButtonPressed = false;
@@ -305,17 +305,17 @@ public class PlayerObjects : Block
     if (!isCameraRotation)
       return;
 
-    Quaternion currentRotation = levelManager.CinemachineVirtual.transform.rotation;
+    Quaternion currentRotation = levelManager.CinemachineCamera.transform.rotation;
     Quaternion targetQuaternion = Quaternion.Euler(48.0f, targetRotation, 0.0f);
     Quaternion newRotation = Quaternion.Slerp(currentRotation, targetQuaternion, 3f * Time.deltaTime);
 
-    levelManager.CinemachineVirtual.transform.rotation = newRotation;
+    levelManager.CinemachineCamera.transform.rotation = newRotation;
 
     // Проверяем, достигли ли нужного угла поворота
     if (Quaternion.Angle(currentRotation, targetQuaternion) < 0.01f)
     {
       isCameraRotation = false;
-      levelManager.CinemachineVirtual.transform.rotation = targetQuaternion;
+      levelManager.CinemachineCamera.transform.rotation = targetQuaternion;
     }
   }
 

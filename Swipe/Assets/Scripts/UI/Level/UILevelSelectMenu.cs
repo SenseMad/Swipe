@@ -44,7 +44,7 @@ namespace Sokoban.UI
     {
       MoveMenuHorizontally();
 
-      MoveMenuVertically(5);
+      MoveMenuVertically(8);
     }
 
     //======================================

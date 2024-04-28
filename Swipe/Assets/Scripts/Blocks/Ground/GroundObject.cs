@@ -15,7 +15,9 @@ public class GroundObject : StaticObjects
 
   //======================================
 
-  public bool IsBlockActive { get; private set; }
+  public bool IsBlockActive;
+
+  public Vector3Int Position { get; set; }
 
   //======================================
 

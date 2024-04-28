@@ -1,11 +1,12 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
-using Cinemachine;
+using Unity.Cinemachine;
 
 using Sokoban.GameManagement;
 using Sokoban.GridEditor;
 using Sokoban.UI;
+using NUnit.Framework.Internal;
 
 namespace Sokoban.LevelManagement
 {
@@ -30,7 +31,7 @@ namespace Sokoban.LevelManagement
 
     private GameManager gameManager;
 
-    private CinemachineVirtualCamera cinemachineVirtual;
+    private CinemachineCamera cinemachineCamera;
 
     private bool isCameraRotation;
 
@@ -41,6 +42,8 @@ namespace Sokoban.LevelManagement
     private int tempAmountFoodCollected = 0;
 
     private DifficultyGame difficultyGame;
+
+    private bool isLevelMenu = false;
 
     //======================================
 
@@ -54,10 +57,10 @@ namespace Sokoban.LevelManagement
     
     public GridLevel GridLevel => _gridLevel;
 
-    public CinemachineVirtualCamera CinemachineVirtual
+    public CinemachineCamera CinemachineCamera
     {
-      get => cinemachineVirtual;
-      set => cinemachineVirtual = value;
+      get => cinemachineCamera;
+      set => cinemachineCamera = value;
     }
 
     public bool IsLevelRunning { get; set; } = false;
@@ -118,7 +121,7 @@ namespace Sokoban.LevelManagement
     {
       gameManager = GameManager.Instance;
 
-      cinemachineVirtual = FindObjectOfType<CinemachineVirtualCamera>();
+      cinemachineCamera = FindAnyObjectByType<CinemachineCamera>();
 
       audioManager = AudioManager.Instance;
 
@@ -180,9 +183,9 @@ namespace Sokoban.LevelManagement
       if (!IsLevelMenu)
         return;
 
-      float yRotation = cinemachineVirtual.transform.rotation.eulerAngles.y + Time.deltaTime * 5f;
+      float yRotation = cinemachineCamera.transform.rotation.eulerAngles.y + Time.deltaTime * 5f;
       Quaternion rotation = Quaternion.Euler(48f, yRotation, 0f);
-      cinemachineVirtual.transform.rotation = rotation;
+      cinemachineCamera.transform.rotation = rotation;
     }
 
     private void ResetCameraRotation()
@@ -190,16 +193,16 @@ namespace Sokoban.LevelManagement
       if (!isCameraRotation)
         return;
 
-      Quaternion currentRotation = cinemachineVirtual.transform.rotation;
+      Quaternion currentRotation = cinemachineCamera.transform.rotation;
       Quaternion targetQuaternion = Quaternion.Euler(48.0f, 0.0f, 0.0f);
       Quaternion newRotation = Quaternion.Slerp(currentRotation, targetQuaternion, 3f * Time.deltaTime);
 
-      cinemachineVirtual.transform.rotation = newRotation;
+      cinemachineCamera.transform.rotation = newRotation;
 
       if (Quaternion.Angle(currentRotation, targetQuaternion) < 0.01f)
       {
         isCameraRotation = false;
-        cinemachineVirtual.transform.rotation = targetQuaternion;
+        cinemachineCamera.transform.rotation = targetQuaternion;
       }
     }
 
@@ -328,6 +331,8 @@ namespace Sokoban.LevelManagement
 
     public void ReloadLevel(LevelData levelData)
     {
+      gameManager.ProgressData.IndexLastLevelPlayed = levelData.LevelNumber;
+
       _currentLevelData = levelData;
 
       IsNextLevelData?.Invoke(_currentLevelData);
@@ -361,6 +366,7 @@ namespace Sokoban.LevelManagement
     {
       ProgressData progress = gameManager.ProgressData;
       LevelData oldLevelData = _currentLevelData;
+      Debug.Log($"{progress.IndexLastLevelPlayed}");
 
       _currentLevelData = Levels.GetLevelData(progress.LocationLastLevelPlayed, progress.IndexLastLevelPlayed);
       _currentLevelData ??= oldLevelData;
@@ -373,6 +379,9 @@ namespace Sokoban.LevelManagement
 
     public void ExitMenu()
     {
+      if (IsLevelMenu)
+        return;
+
       GetLastLevelData();
       _gridLevel.CreatingLevelGrid();
       IsLevelMenu = true;

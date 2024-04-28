@@ -16,36 +16,36 @@ MonoBehaviour:
   - _typeDevice: 0
     _buttons:
     - TypeButton: 0
-      SpriteButton: {fileID: 21300000, guid: 2322187541deafa47b961b140a8c0e91, type: 3}
+      SpriteButton: {fileID: 21300000, guid: 6f36966658ddce64b8c55522c52d59c7, type: 3}
     - TypeButton: 1
-      SpriteButton: {fileID: 21300000, guid: 9792c5f29f1ef714898d4751749fe804, type: 3}
+      SpriteButton: {fileID: 21300000, guid: e2ffcbb542a973a4bab57d7237b6a403, type: 3}
     - TypeButton: 2
-      SpriteButton: {fileID: 21300000, guid: b4a41959fe58e59449cfb3e7a514546a, type: 3}
+      SpriteButton: {fileID: 21300000, guid: 0734f744fb2f03b428b8da9ebb19dd7f, type: 3}
     - TypeButton: 3
-      SpriteButton: {fileID: 21300000, guid: 54aba1b4753755b4bb19f160ae0cc688, type: 3}
+      SpriteButton: {fileID: 21300000, guid: 32745557ddbe7764e82386a514bec6a5, type: 3}
     - TypeButton: 4
-      SpriteButton: {fileID: 21300000, guid: 40a2be46422d1e44284798652255c78b, type: 3}
+      SpriteButton: {fileID: 21300000, guid: 986102f73ad46ce4d9c9a0acec45c58a, type: 3}
   - _typeDevice: 1
     _buttons:
     - TypeButton: 0
-      SpriteButton: {fileID: 21300000, guid: d98ba25e6217cea4f948683858ad948c, type: 3}
+      SpriteButton: {fileID: 21300000, guid: 6cc7ca82241b9fa47a53eb0f1679f7b9, type: 3}
     - TypeButton: 1
-      SpriteButton: {fileID: 21300000, guid: f5bb998e7102c6b48b1a4ba7cdd8f8fc, type: 3}
+      SpriteButton: {fileID: 21300000, guid: 4377c07e19eefda47a1ed7095a25cb63, type: 3}
     - TypeButton: 2
-      SpriteButton: {fileID: 21300000, guid: 82eedfe6731460e4a986f1f23caaa862, type: 3}
+      SpriteButton: {fileID: 21300000, guid: f6540966cac831346b73130dea4ea966, type: 3}
     - TypeButton: 3
-      SpriteButton: {fileID: -1101977100, guid: 01f4c7d34dd6572479a268bc1afbd23f, type: 3}
+      SpriteButton: {fileID: 21300000, guid: 32745557ddbe7764e82386a514bec6a5, type: 3}
     - TypeButton: 4
-      SpriteButton: {fileID: -1221778207, guid: 01f4c7d34dd6572479a268bc1afbd23f, type: 3}
+      SpriteButton: {fileID: 21300000, guid: 986102f73ad46ce4d9c9a0acec45c58a, type: 3}
   - _typeDevice: 2
     _buttons:
     - TypeButton: 0
-      SpriteButton: {fileID: 21300000, guid: e8a0a287af5d97d40a71cc3a54651dbb, type: 3}
+      SpriteButton: {fileID: 21300000, guid: d41c97339bf68a94c9b11841293f7af4, type: 3}
     - TypeButton: 1
-      SpriteButton: {fileID: 21300000, guid: 3f8ff1615a0694f49814f322d3649335, type: 3}
+      SpriteButton: {fileID: 21300000, guid: b0b5b63db58f19445b4d07566f9cad65, type: 3}
     - TypeButton: 2
-      SpriteButton: {fileID: 21300000, guid: 3858274d19a39fa42a4b1ef73d0e8e22, type: 3}
+      SpriteButton: {fileID: 21300000, guid: cddb3f5ab7c8b15459b8e528c63dee12, type: 3}
     - TypeButton: 3
-      SpriteButton: {fileID: -1101977100, guid: 01f4c7d34dd6572479a268bc1afbd23f, type: 3}
+      SpriteButton: {fileID: 21300000, guid: 32745557ddbe7764e82386a514bec6a5, type: 3}
     - TypeButton: 4
-      SpriteButton: {fileID: -1221778207, guid: 01f4c7d34dd6572479a268bc1afbd23f, type: 3}
+      SpriteButton: {fileID: 21300000, guid: 986102f73ad46ce4d9c9a0acec45c58a, type: 3}

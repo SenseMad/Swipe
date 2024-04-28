@@ -34,9 +34,6 @@ MonoBehaviour:
   - _typeObject: 1
     _indexObject: 0
     _positionObject: {x: 3, y: 1, z: 3}
-  - _typeObject: 4
-    _indexObject: 0
-    _positionObject: {x: 3, y: 1, z: 7}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 4, y: 0, z: 3}
@@ -58,12 +55,6 @@ MonoBehaviour:
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 5, y: 0, z: 7}
-  - _typeObject: 4
-    _indexObject: 0
-    _positionObject: {x: 5, y: 1, z: 3}
-  - _typeObject: 4
-    _indexObject: 0
-    _positionObject: {x: 5, y: 1, z: 7}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 6, y: 0, z: 4}
@@ -79,12 +70,6 @@ MonoBehaviour:
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 6, y: 0, z: 8}
-  - _typeObject: 4
-    _indexObject: 0
-    _positionObject: {x: 6, y: 1, z: 4}
-  - _typeObject: 4
-    _indexObject: 0
-    _positionObject: {x: 6, y: 1, z: 8}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 7, y: 0, z: 4}
@@ -106,12 +91,6 @@ MonoBehaviour:
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 8, y: 0, z: 8}
-  - _typeObject: 4
-    _indexObject: 0
-    _positionObject: {x: 8, y: 1, z: 4}
-  - _typeObject: 4
-    _indexObject: 0
-    _positionObject: {x: 8, y: 1, z: 8}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 9, y: 0, z: 5}
@@ -127,12 +106,6 @@ MonoBehaviour:
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 9, y: 0, z: 9}
-  - _typeObject: 4
-    _indexObject: 0
-    _positionObject: {x: 9, y: 1, z: 5}
-  - _typeObject: 4
-    _indexObject: 0
-    _positionObject: {x: 9, y: 1, z: 9}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 10, y: 0, z: 5}
@@ -154,11 +127,5 @@ MonoBehaviour:
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 11, y: 0, z: 9}
-  - _typeObject: 4
-    _indexObject: 0
-    _positionObject: {x: 11, y: 1, z: 5}
-  - _typeObject: 4
-    _indexObject: 0
-    _positionObject: {x: 11, y: 1, z: 9}
   _maximumNumberSteps: 0
   _maxTimeOnLevel: 0
