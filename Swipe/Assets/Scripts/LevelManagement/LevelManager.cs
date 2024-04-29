@@ -366,7 +366,6 @@ namespace Sokoban.LevelManagement
     {
       ProgressData progress = gameManager.ProgressData;
       LevelData oldLevelData = _currentLevelData;
-      Debug.Log($"{progress.IndexLastLevelPlayed}");
 
       _currentLevelData = Levels.GetLevelData(progress.LocationLastLevelPlayed, progress.IndexLastLevelPlayed);
       _currentLevelData ??= oldLevelData;

@@ -28,7 +28,7 @@ namespace PSME_View.Canvas
 
     private void Reload_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-      /*Rect rect = new(0, 0, renderTexture.width, renderTexture.height);
+      Rect rect = new(0, 0, renderTexture.width, renderTexture.height);
       Texture2D texture = new(renderTexture.width, renderTexture.height, TextureFormat.RGBA32, false);
 
       camera.targetTexture = renderTexture;
@@ -44,9 +44,9 @@ namespace PSME_View.Canvas
 
       camera.targetTexture = null;
       RenderTexture.active = null;
-      Destroy(texture);*/
+      Destroy(texture);
 
-      RenderTexture.active = renderTexture;
+      /*RenderTexture.active = renderTexture;
       Texture2D texture = new(renderTexture.width, renderTexture.height, TextureFormat.RGBA32, false);
       texture.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
       texture.Apply();
@@ -55,7 +55,7 @@ namespace PSME_View.Canvas
       System.IO.File.WriteAllBytes($"{Application.dataPath}/{Random.Range(0, 10000)}.png", bytes);
 
       RenderTexture.active = null;
-      Destroy(texture);
+      Destroy(texture);*/
     }
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
