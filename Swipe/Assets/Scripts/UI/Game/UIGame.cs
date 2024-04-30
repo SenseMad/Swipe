@@ -109,7 +109,10 @@ namespace Sokoban.UI
       return parLevelData.Location switch
       {
         Location.Chapter_1 => "1",
-        _ => "",
+        Location.Chapter_2 => "2",
+        Location.Chapter_3 => "3",
+        Location.Chapter_4 => "4",
+        _ => ""
       };
     }
 

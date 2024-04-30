@@ -11,5 +11,8 @@ public class GetLocation
 [Serializable]
 public enum Location
 {
-  Chapter_1
+  Chapter_1,
+  Chapter_2,
+  Chapter_3,
+  Chapter_4
 }

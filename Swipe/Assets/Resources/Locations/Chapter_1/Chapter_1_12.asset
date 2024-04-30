@@ -18,85 +18,88 @@ MonoBehaviour:
   _listLevelObjects:
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 5, y: 0, z: 4}
+    _positionObject: {x: 3, y: 0, z: 6}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 5, y: 0, z: 5}
+    _positionObject: {x: 3, y: 0, z: 7}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 3, y: 0, z: 8}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 3, y: 0, z: 9}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 3, y: 0, z: 10}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 3, y: 0, z: 11}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 3, y: 0, z: 12}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 3, y: 0, z: 13}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 4, y: 0, z: 6}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 4, y: 0, z: 13}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 5, y: 0, z: 6}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 5, y: 0, z: 7}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 5, y: 0, z: 8}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 5, y: 0, z: 9}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 5, y: 0, z: 10}
-  - _typeObject: 3
-    _indexObject: 0
     _positionObject: {x: 5, y: 0, z: 11}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 6, y: 0, z: 2}
+    _positionObject: {x: 5, y: 0, z: 12}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 6, y: 0, z: 3}
+    _positionObject: {x: 5, y: 0, z: 13}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 6, y: 0, z: 4}
+    _positionObject: {x: 5, y: 0, z: 14}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 6, y: 0, z: 8}
+    _positionObject: {x: 5, y: 0, z: 15}
+  - _typeObject: 1
+    _indexObject: 0
+    _positionObject: {x: 5, y: 1, z: 13}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 6, y: 0, z: 10}
+    _positionObject: {x: 6, y: 0, z: 6}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 6, y: 0, z: 11}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 6, y: 0, z: 12}
+    _positionObject: {x: 6, y: 0, z: 13}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 7, y: 0, z: 2}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 7, y: 0, z: 4}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 7, y: 0, z: 5}
+    _positionObject: {x: 6, y: 0, z: 15}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 7, y: 0, z: 6}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 7, y: 0, z: 7}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 7, y: 0, z: 8}
-  - _typeObject: 3
-    _indexObject: 0
     _positionObject: {x: 7, y: 0, z: 10}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 7, y: 0, z: 11}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 7, y: 0, z: 12}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 8, y: 0, z: 2}
+    _positionObject: {x: 7, y: 0, z: 13}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 8, y: 0, z: 4}
+    _positionObject: {x: 7, y: 0, z: 15}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 8, y: 0, z: 6}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 8, y: 0, z: 8}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 8, y: 0, z: 10}
@@ -105,19 +108,10 @@ MonoBehaviour:
     _positionObject: {x: 8, y: 0, z: 12}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 9, y: 0, z: 2}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 9, y: 0, z: 4}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 9, y: 0, z: 5}
+    _positionObject: {x: 8, y: 0, z: 15}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 9, y: 0, z: 6}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 9, y: 0, z: 8}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 9, y: 0, z: 9}
@@ -126,61 +120,55 @@ MonoBehaviour:
     _positionObject: {x: 9, y: 0, z: 10}
   - _typeObject: 3
     _indexObject: 0
+    _positionObject: {x: 9, y: 0, z: 11}
+  - _typeObject: 3
+    _indexObject: 0
     _positionObject: {x: 9, y: 0, z: 12}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 10, y: 0, z: 2}
+    _positionObject: {x: 9, y: 0, z: 15}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 10, y: 0, z: 8}
+    _positionObject: {x: 10, y: 0, z: 6}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 10, y: 0, z: 12}
+    _positionObject: {x: 10, y: 0, z: 9}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 11, y: 0, z: 2}
+    _positionObject: {x: 10, y: 0, z: 11}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 11, y: 0, z: 3}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 11, y: 0, z: 4}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 11, y: 0, z: 5}
+    _positionObject: {x: 10, y: 0, z: 15}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 11, y: 0, z: 6}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 11, y: 0, z: 7}
-  - _typeObject: 3
-    _indexObject: 0
     _positionObject: {x: 11, y: 0, z: 8}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 11, y: 0, z: 12}
-  - _typeObject: 1
+    _positionObject: {x: 11, y: 0, z: 9}
+  - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 11, y: 1, z: 2}
+    _positionObject: {x: 11, y: 0, z: 10}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 11, y: 0, z: 11}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 11, y: 0, z: 15}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 12, y: 0, z: 6}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 12, y: 0, z: 8}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 12, y: 0, z: 10}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 12, y: 0, z: 11}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 12, y: 0, z: 12}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 13, y: 0, z: 3}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 13, y: 0, z: 4}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 13, y: 0, z: 5}
+    _positionObject: {x: 12, y: 0, z: 15}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 13, y: 0, z: 6}
@@ -189,61 +177,25 @@ MonoBehaviour:
     _positionObject: {x: 13, y: 0, z: 7}
   - _typeObject: 3
     _indexObject: 0
+    _positionObject: {x: 13, y: 0, z: 8}
+  - _typeObject: 3
+    _indexObject: 0
     _positionObject: {x: 13, y: 0, z: 9}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 13, y: 0, z: 10}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 14, y: 0, z: 2}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 14, y: 0, z: 3}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 14, y: 0, z: 4}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 14, y: 0, z: 5}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 14, y: 0, z: 6}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 14, y: 0, z: 7}
+    _positionObject: {x: 13, y: 0, z: 15}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 14, y: 0, z: 8}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 14, y: 0, z: 9}
+    _positionObject: {x: 14, y: 0, z: 15}
   - _typeObject: 3
     _indexObject: 0
-    _positionObject: {x: 14, y: 0, z: 10}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 14, y: 0, z: 11}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 14, y: 0, z: 12}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 15, y: 0, z: 2}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 15, y: 0, z: 3}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 15, y: 0, z: 4}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 15, y: 0, z: 5}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 15, y: 0, z: 6}
-  - _typeObject: 3
-    _indexObject: 0
-    _positionObject: {x: 15, y: 0, z: 7}
+    _positionObject: {x: 15, y: 0, z: 8}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 15, y: 0, z: 9}
@@ -256,5 +208,14 @@ MonoBehaviour:
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 15, y: 0, z: 12}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 15, y: 0, z: 13}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 15, y: 0, z: 14}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 15, y: 0, z: 15}
   _maximumNumberSteps: 0
   _maxTimeOnLevel: 0

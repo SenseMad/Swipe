@@ -6957,7 +6957,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &611436805
 Transform:
@@ -10444,6 +10444,9 @@ MonoBehaviour:
   _panelLevelSelection: {fileID: 655925891}
   _locationDatas:
   - {fileID: 11400000, guid: a9e92f9f4a23c884c8b658ce413b961c, type: 2}
+  - {fileID: 11400000, guid: 51dd9d7d88928aa478237c0c93f887d3, type: 2}
+  - {fileID: 11400000, guid: 45868939de04dac4c8fd54f2814eea51, type: 2}
+  - {fileID: 11400000, guid: aae8ee72f279e10428c96c9b1f48ae6f, type: 2}
 --- !u!114 &890829633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18253,7 +18256,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!64 &1589513643
 MeshCollider:
@@ -21293,7 +21296,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1983934387
 Transform:
