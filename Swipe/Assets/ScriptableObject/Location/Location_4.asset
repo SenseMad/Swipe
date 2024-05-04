@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _location: 3
   _translationKey: CHAPTER_4_KEY
-  _image: {fileID: 21300000, guid: 5ffc1c3c119dd4a4ea199ec258ab3919, type: 3}
+  _image: {fileID: 21300000, guid: ee1f0cf77e4ab9148a29a31fc11d34df, type: 3}
