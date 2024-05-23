@@ -14,7 +14,7 @@
       "dependencies": {
         "com.alekrus.universal-platform": "0.2.0"
       },
-      "hash": "4940eafaf682024121cbf255ce500771d569454d"
+      "hash": "6b4038fd2ddb86f44be7070edd221082bfabb646"
     },
     "com.alekrus.universal-platform.steam": {
       "version": "https://github.com/SnagBox-Games/com.alekrus.universal-platform.steam.git",
