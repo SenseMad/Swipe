@@ -5,7 +5,16 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "f71efc3252d33dc10483b90a00cc4a6b7754e8a0"
+      "hash": "e2bb8b7b068fa13ffa3a13eede3de4d75c80f656"
+    },
+    "com.alekrus.universal-platform.ps4": {
+      "version": "https://github.com/SnagBox-Games/com.alekrus.universal-platform.ps4.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.alekrus.universal-platform": "0.2.0"
+      },
+      "hash": "4940eafaf682024121cbf255ce500771d569454d"
     },
     "com.alekrus.universal-platform.steam": {
       "version": "https://github.com/SnagBox-Games/com.alekrus.universal-platform.steam.git",
@@ -14,7 +23,7 @@
       "dependencies": {
         "com.alekrus.universal-platform": "0.2.0"
       },
-      "hash": "ba0e22c35c59bc72be646c395f862b3a612da589"
+      "hash": "a061fb106aab0dce4b7edf924a1496cea4387947"
     },
     "com.rlabrecque.steamworks.net": {
       "version": "https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net#20.0.0",

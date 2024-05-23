@@ -71,14 +71,17 @@ namespace Sokoban.UI
 
 #elif UNITY_PS4
       typeDevice = TypesDevices.DualShock;
-      switch (typeButton)
+      if (!InputHandler.Instance.EnterButtonCross)
       {
-        case TypesButtons.Select:
-          typeButton = TypesButtons.Back;
-          break;
-        case TypesButtons.Back:
-          typeButton = TypesButtons.Select;
-          break;
+        switch (typeButton)
+        {
+          case TypesButtons.Select:
+            typeButton = TypesButtons.Back;
+            break;
+          case TypesButtons.Back:
+            typeButton = TypesButtons.Select;
+            break;
+        }
       }
 #endif
       sprite = _buttonIcons.GetSprite(typeDevice, typeButton);

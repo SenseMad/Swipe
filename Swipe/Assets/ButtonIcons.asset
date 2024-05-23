@@ -34,9 +34,9 @@ MonoBehaviour:
     - TypeButton: 2
       SpriteButton: {fileID: 21300000, guid: f6540966cac831346b73130dea4ea966, type: 3}
     - TypeButton: 3
-      SpriteButton: {fileID: 21300000, guid: 32745557ddbe7764e82386a514bec6a5, type: 3}
+      SpriteButton: {fileID: 21300000, guid: 5a854aac347a4974394fec6fdf988107, type: 3}
     - TypeButton: 4
-      SpriteButton: {fileID: 21300000, guid: 986102f73ad46ce4d9c9a0acec45c58a, type: 3}
+      SpriteButton: {fileID: 21300000, guid: da7cd737ad3c17d4fba1d5bfd211c08e, type: 3}
   - _typeDevice: 2
     _buttons:
     - TypeButton: 0
@@ -46,6 +46,6 @@ MonoBehaviour:
     - TypeButton: 2
       SpriteButton: {fileID: 21300000, guid: cddb3f5ab7c8b15459b8e528c63dee12, type: 3}
     - TypeButton: 3
-      SpriteButton: {fileID: 21300000, guid: 32745557ddbe7764e82386a514bec6a5, type: 3}
+      SpriteButton: {fileID: 21300000, guid: f48fa0c4ddb9d2441b6adc32ded71f18, type: 3}
     - TypeButton: 4
-      SpriteButton: {fileID: 21300000, guid: 986102f73ad46ce4d9c9a0acec45c58a, type: 3}
+      SpriteButton: {fileID: 21300000, guid: 821495676aa80a647ad3b6b1e49cb330, type: 3}

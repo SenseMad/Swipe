@@ -5,6 +5,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 using Sokoban.GameManagement;
 using Alekrus.UnivarsalPlatform.SaveLoad;
+using Alekrus.UnivarsalPlatform;
+using Sony.PS4.SavedGame;
+using UnityEngine.SocialPlatforms.Impl;
 
 namespace Sokoban.Save
 {
@@ -12,20 +15,22 @@ namespace Sokoban.Save
   {
     public static string PATH = $"{Application.persistentDataPath}/SaveData.dat";
 
-    private IUserSaveLoad userSaveLoad;
+    private ISaveLoad saveLoad;
+
+    private ILocalUserId LocalUser => GameManager.Instance.PlatformManager.LocalUserProfiles.GetPrimaryLocalUserId();
 
     //======================================
 
     public void Initialize()
     {
-      userSaveLoad = GameManager.Instance.PlatformManager.SaveLoad.GetUserSaveLoad(GameManager.Instance.PlatformManager.LocalUserProfiles.GetPrimaryLocalUserId());
+      saveLoad = GameManager.Instance.PlatformManager.SaveLoad;
     }
 
     //======================================
 
     public void SaveData()
     {
-      if (userSaveLoad == null)
+      if (saveLoad == null)
         return;
 
       GameData data = GameData();
@@ -41,24 +46,24 @@ namespace Sokoban.Save
         Detail = "This is where your suffering is stored!"
       };
 
-      userSaveLoad.Save(memoryStream.GetBuffer(), gameSlotDetails);
+      saveLoad.Save(LocalUser, memoryStream.GetBuffer(), gameSlotDetails);
     }
 
     public void LoadData()
     {
-      if (userSaveLoad == null)
+      if (saveLoad == null)
         return;
 
-      userSaveLoad.GameLoaded += UserSaveLoad_GameLoaded;
+      saveLoad.GameLoaded += UserSaveLoad_GameLoaded;
 
-      userSaveLoad.Load();
+      saveLoad.Load(LocalUser);
     }
 
-    private void UserSaveLoad_GameLoaded(IUserSaveLoad parSelf, SaveLoadReceivedArgs parArgs)
+    private void UserSaveLoad_GameLoaded(LoadedReceivedArgs parArgs)
     {
-      userSaveLoad.GameLoaded -= UserSaveLoad_GameLoaded;
+      saveLoad.GameLoaded -= UserSaveLoad_GameLoaded;
 
-      MemoryStream input = new(parSelf.CurrentData);
+      MemoryStream input = new(parArgs.Data);
       BinaryFormatter binaryFormatter = new();
       GameData data = (GameData)binaryFormatter.Deserialize(input);
 

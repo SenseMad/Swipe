@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.alekrus.universal-platform": "https://github.com/SnagBox-Games/com.alekrus.universal-platform.git",
+    "com.alekrus.universal-platform.ps4": "https://github.com/SnagBox-Games/com.alekrus.universal-platform.ps4.git",
     "com.alekrus.universal-platform.steam": "https://github.com/SnagBox-Games/com.alekrus.universal-platform.steam.git",
     "com.rlabrecque.steamworks.net": "https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net#20.0.0",
     "com.unity.2d.sprite": "1.0.0",
