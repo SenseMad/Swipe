@@ -1,0 +1,4 @@
+SCEA: 6
+SCEE: 3
+SCEJA-Japan: 3
+SCEJA-Asia: 3

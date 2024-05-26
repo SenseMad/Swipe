@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectDataExport>
+  <PhonemeData>
+    <Word>Grassy Quest</Word>
+    <TargetLanguage>Japanese</TargetLanguage>
+    <Display>true</Display>
+    <PhonemeParameterDataModelCollection>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r a s i ___ k w e s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+    </PhonemeParameterDataModelCollection>
+  </PhonemeData>
+  <PhonemeData>
+    <Word>Grassy Quest</Word>
+    <TargetLanguage>EnglishUS</TargetLanguage>
+    <Display>true</Display>
+    <PhonemeParameterDataModelCollection>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r ae s iy ___ k w eh s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r aa s ih ___ k w eh s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+    </PhonemeParameterDataModelCollection>
+  </PhonemeData>
+  <PhonemeData>
+    <Word>Grassy Quest</Word>
+    <TargetLanguage>EnglishUK</TargetLanguage>
+    <Display>true</Display>
+    <PhonemeParameterDataModelCollection>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r aa s ih ___ k w eh s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r ae s iy ___ k w eh s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r ae s iy ___ k w iy z t</Phoneme>
+        <IsCheckedP>false</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+    </PhonemeParameterDataModelCollection>
+  </PhonemeData>
+  <PhonemeData>
+    <Word>Grassy Quest</Word>
+    <TargetLanguage>French</TargetLanguage>
+    <Display>true</Display>
+    <PhonemeParameterDataModelCollection>
+      <PhonemeParameterDataModel>
+        <Phoneme>g R a s i ___ k E s</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g R a s i ___ k w E s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g R a s i ___ k w i z t</Phoneme>
+        <IsCheckedP>false</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+    </PhonemeParameterDataModelCollection>
+  </PhonemeData>
+  <PhonemeData>
+    <Word>Grassy Quest</Word>
+    <TargetLanguage>German</TargetLanguage>
+    <Display>true</Display>
+    <PhonemeParameterDataModelCollection>
+      <PhonemeParameterDataModel>
+        <Phoneme>g R a s i ___ k v e s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g R a s i ___ k v ae s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g R a s z i ___ k v e s t</Phoneme>
+        <IsCheckedP>false</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g R a s z i ___ k v ae s t</Phoneme>
+        <IsCheckedP>false</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g R ae s i ___ k u e s t</Phoneme>
+        <IsCheckedP>false</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g R ae s i ___ k u i z t</Phoneme>
+        <IsCheckedP>false</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+    </PhonemeParameterDataModelCollection>
+  </PhonemeData>
+  <PhonemeData>
+    <Word>Grassy Quest</Word>
+    <TargetLanguage>Spanish</TargetLanguage>
+    <Display>true</Display>
+    <PhonemeParameterDataModelCollection>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r a s s j ___ k e s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r a s i ___ k w e s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r a s i ___ k w i s t</Phoneme>
+        <IsCheckedP>false</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+    </PhonemeParameterDataModelCollection>
+  </PhonemeData>
+  <PhonemeData>
+    <Word>Grassy Quest</Word>
+    <TargetLanguage>Italian</TargetLanguage>
+    <Display>true</Display>
+    <PhonemeParameterDataModelCollection>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r a s i ___ k w e s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r a s s i ___ k w e s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r a s i ___ k w i z t</Phoneme>
+        <IsCheckedP>false</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r a s s i ___ k w i z t</Phoneme>
+        <IsCheckedP>false</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+    </PhonemeParameterDataModelCollection>
+  </PhonemeData>
+  <PhonemeData>
+    <Word>Grassy Quest</Word>
+    <TargetLanguage>Russian</TargetLanguage>
+    <Display>true</Display>
+    <PhonemeParameterDataModelCollection>
+      <PhonemeParameterDataModel>
+        <Phoneme>g ri a s i ___ k u eh s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+    </PhonemeParameterDataModelCollection>
+  </PhonemeData>
+  <PhonemeData>
+    <Word>Grassy Quest</Word>
+    <TargetLanguage>Polish</TargetLanguage>
+    <Display>true</Display>
+    <PhonemeParameterDataModelCollection>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r a s s ih ___ k s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r a s s ih ___ iy a u e s t</Phoneme>
+        <IsCheckedP>true</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+      <PhonemeParameterDataModel>
+        <Phoneme>g r a s iy ___ k w e s t</Phoneme>
+        <IsCheckedP>false</IsCheckedP>
+        <IsImported>false</IsImported>
+      </PhonemeParameterDataModel>
+    </PhonemeParameterDataModelCollection>
+  </PhonemeData>
+</ProjectDataExport>

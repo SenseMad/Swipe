@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gamePackage>
+  <language id="00" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g r a s i ___ k w e s t</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="01" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g r ae s iy ___ k w eh s t</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g r aa s ih ___ k w eh s t</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="02" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g R a s i ___ k E s</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g R a s i ___ k w E s t</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="03" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g r a s s j ___ k e s t</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g r a s i ___ k w e s t</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="04" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g R a s i ___ k v e s t</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g R a s i ___ k v ae s t</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="05" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g r a s i ___ k w e s t</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g r a s s i ___ k w e s t</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="08" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g ri a s i ___ k u eh s t</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="16" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g r a s s ih ___ k s t</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g r a s s ih ___ iy a u e s t</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="18" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g r aa s ih ___ k w eh s t</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Grassy Quest</text>
+      <pronunciation>g r ae s iy ___ k w eh s t</pronunciation>
+    </speechRecognitionWords>
+  </language>
+</gamePackage>

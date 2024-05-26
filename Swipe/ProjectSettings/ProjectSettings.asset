@@ -16,13 +16,13 @@ PlayerSettings:
   productName: Swipe
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.07058824, g: 0.09411765, b: 0.11372549, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
-  m_SplashScreenAnimation: 1
+  m_SplashScreenAnimation: 0
   m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 0
+  m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
@@ -39,7 +39,11 @@ PlayerSettings:
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos: []
+  m_SplashScreenLogos:
+  - logo: {fileID: 21300000, guid: c80888985b7b31643aef0a527669db95, type: 3}
+    duration: 3
+  - logo: {fileID: 10404, guid: 0000000000000000f000000000000000, type: 0}
+    duration: 2.5
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
@@ -138,7 +142,8 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: d20bff3ab10540d46a459d5180ce5464, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -638,11 +643,11 @@ PlayerSettings:
   switchEnableRamDiskSupport: 0
   switchMicroSleepForYieldTime: 25
   switchRamDiskSpaceSize: 12
-  ps4NPAgeRating: 12
+  ps4NPAgeRating: 6
   ps4NPTitleSecret: 
-  ps4NPTrophyPackPath: 
-  ps4ParentalLevel: 11
-  ps4ContentID: ED1633-NPXX51362_00-0000000000000000
+  ps4NPTrophyPackPath: PS4_Data/trophy/trophy.trp
+  ps4ParentalLevel: 6
+  ps4ContentID: UP8644-CUSA49161_00-GRASSYQPS4EA0000
   ps4Category: 0
   ps4MasterVersion: 01.00
   ps4AppVersion: 01.00
@@ -652,38 +657,38 @@ PlayerSettings:
   ps4VideoOutInitialWidth: 1920
   ps4VideoOutBaseModeInitialWidth: 1920
   ps4VideoOutReprojectionRate: 60
-  ps4PronunciationXMLPath: 
-  ps4PronunciationSIGPath: 
-  ps4BackgroundImagePath: 
-  ps4StartupImagePath: 
+  ps4PronunciationXMLPath: PS4_Data/pronunciation/pronunciation.xml
+  ps4PronunciationSIGPath: PS4_Data/pronunciation/pronunciation.sig
+  ps4BackgroundImagePath: PS4_Data/images/Background_1920x1080_PS.png
+  ps4StartupImagePath: PS4_Data/images/StartUpImage_1920x1080_PS.png
   ps4StartupImagesFolder: 
   ps4IconImagesFolder: 
-  ps4SaveDataImagePath: 
+  ps4SaveDataImagePath: PS4_Data/images/SaveDataImage_228x128_PS.png
   ps4SdkOverride: 
   ps4BGMPath: 
   ps4ShareFilePath: 
   ps4ShareOverlayImagePath: 
   ps4PrivacyGuardImagePath: 
   ps4ExtraSceSysFile: 
-  ps4NPtitleDatPath: 
+  ps4NPtitleDatPath: PS4_Data/SIEA CUSA49161_00/nptitle.dat
   ps4RemotePlayKeyAssignment: -1
   ps4RemotePlayKeyMappingDir: 
   ps4PlayTogetherPlayerCount: 0
-  ps4EnterButtonAssignment: 1
+  ps4EnterButtonAssignment: 2
   ps4ApplicationParam1: 0
   ps4ApplicationParam2: 0
   ps4ApplicationParam3: 0
   ps4ApplicationParam4: 0
-  ps4DownloadDataSize: 0
+  ps4DownloadDataSize: 256
   ps4GarlicHeapSize: 2048
   ps4ProGarlicHeapSize: 2560
   playerPrefsMaxSize: 32768
   ps4Passcode: frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQ
-  ps4pnSessions: 1
-  ps4pnPresence: 1
-  ps4pnFriends: 1
-  ps4pnGameCustomData: 1
-  playerPrefsSupport: 0
+  ps4pnSessions: 0
+  ps4pnPresence: 0
+  ps4pnFriends: 0
+  ps4pnGameCustomData: 0
+  playerPrefsSupport: 1
   enableApplicationExit: 0
   resetTempFolder: 1
   restrictedAudioUsageRights: 0
@@ -707,11 +712,23 @@ PlayerSettings:
   ps4disableAutoHideSplash: 0
   ps4videoRecordingFeaturesUsed: 0
   ps4contentSearchFeaturesUsed: 0
-  ps4CompatibilityPS5: 0
+  ps4CompatibilityPS5: 1
   ps4AllowPS5Detection: 0
   ps4GPU800MHz: 1
   ps4attribEyeToEyeDistanceSettingVR: 0
-  ps4IncludedModules: []
+  ps4IncludedModules:
+  - libc.prx
+  - libSceAudioLatencyEstimation.prx
+  - libSceFace.prx
+  - libSceFaceTracker.prx
+  - libSceFios2.prx
+  - libSceFontGsm.prx
+  - libSceHand.prx
+  - libSceHandTracker.prx
+  - libSceHeadTracker.prx
+  - libSceJobManager.prx
+  - libSceNpToolkit2.prx
+  - libSceS3DConversion.prx
   ps4attribVROutputEnabled: 0
   monoEnv: 
   splashScreenBackgroundSourceLandscape: {fileID: 0}
