@@ -2,6 +2,7 @@ using Alekrus.UnivarsalPlatform;
 using Alekrus.UnivarsalPlatform.UserProfiles;
 using Alekrus.UnivarsalPlatform.Achievements;
 using Alekrus.UnivarsalPlatform.SaveLoad;
+using UnityEngine;
 
 public class PlatformManager : IInitializable
 {
@@ -26,11 +27,22 @@ public class PlatformManager : IInitializable
 
   public bool Initialize()
   {
+    Alekrus.UnivarsalPlatform.Utilities.PlatformDebugging.OnLog += Debug.Log;
+    Alekrus.UnivarsalPlatform.Utilities.PlatformDebugging.OnLogError += Debug.LogError;
+    Alekrus.UnivarsalPlatform.Utilities.PlatformDebugging.OnLogWarning += Debug.LogWarning;
+
     Main = MainProvider.Create();
 
     Main.Initialized += Main_Initialized;
 
     return Main.Initialize();
+  }
+
+  public void Update()
+  {
+    Main?.Update();
+    LocalUserProfiles?.Update();
+    SaveLoad?.Update();
   }
 
   public bool Shutdown() => Main.Shutdown();

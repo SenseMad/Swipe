@@ -5,6 +5,7 @@ using System.Collections;
 using Sokoban.LevelManagement;
 using Sokoban.Achievement;
 using Sokoban.Save;
+using System.Linq;
 
 namespace Sokoban.GameManagement
 {
@@ -51,8 +52,7 @@ namespace Sokoban.GameManagement
 #if UNITY_PS4
     private void Update()
     {
-      PlatformManager.Main.Update();
-      PlatformManager.SaveLoad.Update();
+      PlatformManager.Update();
     }
 #endif
 
@@ -90,20 +90,26 @@ namespace Sokoban.GameManagement
 
       PlatformManager = new PlatformManager();
 
-      PlatformManager.Initialize();
+      if (PlatformManager.Initialize())
+      {
+        yield return new WaitForSeconds(1f);
 
-      yield return new WaitUntil(() => PlatformManager.IsInitialized);
+        yield return new WaitUntil(() => PlatformManager.Main.IsInitialized);
+        yield return new WaitUntil(() => PlatformManager.LocalUserProfiles.IsInitialized);
+        yield return new WaitUntil(() => PlatformManager.Achievements.IsInitialized);
+        yield return new WaitUntil(() =>
+        {
+          var progress = PlatformManager.Achievements.GetAchievementsProgress(PlatformManager.LocalUserProfiles.GetPrimaryLocalUserId());
+          return progress.Count() > 0;
+        });
 
-      InstallingSystemLanguage();
+        InstallingSystemLanguage();
 
-      SaveLoadManager.Initialize();
+        yield return new WaitUntil(() => PlatformManager.SaveLoad.IsInitialized);
+        LoadData();
 
-      LoadData();
-
-      yield return new WaitUntil(() => PlatformManager.SaveLoad.IsInitialized);
-
-      Achievements = Achievements.Instance;
-
+        Achievements = Achievements.Instance;
+      }
       if (initScene)
       {
         transitionBetweenScenes.StartSceneChange("GameScene");

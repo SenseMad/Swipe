@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 using Sokoban.GameManagement;
@@ -177,11 +175,36 @@ namespace Sokoban.Achievement
 
     private void UpdateAchivement(Achievement parAchievement)
     {
-#if !UNITY_PS4
+      if (gameManager.PlatformManager.Achievements != null &&
+        gameManager.PlatformManager.LocalUserProfiles != null)
+      {
+        var userId = gameManager.PlatformManager.LocalUserProfiles.GetPrimaryLocalUserId();
 
-#else
-      gameManager.PlatformManager.Achievements.UnlockAchievement(gameManager.PlatformManager.LocalUserProfiles.GetPrimaryLocalUserId(), parAchievement);
-#endif
+        var progress = gameManager.PlatformManager.Achievements.GetAchievementProgress(userId, parAchievement);
+        if (progress != null)
+        {
+          if (!progress.IsUnlocked)
+          {
+            Debug.Log($"UpdateAchivement({parAchievement}) : LocalUserId={userId}");
+            gameManager.PlatformManager.Achievements.UnlockAchievement(userId, parAchievement);
+          }
+          else
+          {
+            Debug.LogWarning($"UpdateAchivement({parAchievement}) : Achievement already unlocked! LocalUserId={userId}");
+          }
+        }
+        else
+        {
+          Debug.LogWarning($"UpdateAchivement({parAchievement}) : No progress has been made for the player! LocalUserId={userId}");
+        }
+      }
+      else
+      {
+        Debug.LogError($"Error UpdateAchivement({parAchievement}): " +
+          $"PlatformManager = {gameManager.PlatformManager}, " +
+          $"Achievements = {gameManager.PlatformManager?.Achievements}, " +
+          $"LocalUserProfiles = {gameManager.PlatformManager?.LocalUserProfiles} ");
+      }
     }
 
     //======================================

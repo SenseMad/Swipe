@@ -1,5 +1,6 @@
 using Sokoban.GridEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InputHandler : SingletonInGame<InputHandler>
 {

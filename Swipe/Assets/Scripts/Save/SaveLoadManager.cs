@@ -15,22 +15,15 @@ namespace Sokoban.Save
   {
     public static string PATH = $"{Application.persistentDataPath}/SaveData.dat";
 
-    private ISaveLoad saveLoad;
+    private ISaveLoad SaveLoad => GameManager.Instance.PlatformManager.SaveLoad;
 
     private ILocalUserId LocalUser => GameManager.Instance.PlatformManager.LocalUserProfiles.GetPrimaryLocalUserId();
 
     //======================================
 
-    public void Initialize()
-    {
-      saveLoad = GameManager.Instance.PlatformManager.SaveLoad;
-    }
-
-    //======================================
-
     public void SaveData()
     {
-      if (saveLoad == null)
+      if (SaveLoad == null)
         return;
 
       GameData data = GameData();
@@ -46,22 +39,22 @@ namespace Sokoban.Save
         Detail = "This is where your suffering is stored!"
       };
 
-      saveLoad.Save(LocalUser, memoryStream.GetBuffer(), gameSlotDetails);
+      SaveLoad.Save(LocalUser, memoryStream.GetBuffer(), gameSlotDetails);
     }
 
     public void LoadData()
     {
-      if (saveLoad == null)
+      if (SaveLoad == null)
         return;
 
-      saveLoad.GameLoaded += UserSaveLoad_GameLoaded;
+      SaveLoad.GameLoaded += UserSaveLoad_GameLoaded;
 
-      saveLoad.Load(LocalUser);
+      SaveLoad.Load(LocalUser);
     }
 
     private void UserSaveLoad_GameLoaded(LoadedReceivedArgs parArgs)
     {
-      saveLoad.GameLoaded -= UserSaveLoad_GameLoaded;
+      SaveLoad.GameLoaded -= UserSaveLoad_GameLoaded;
 
       MemoryStream input = new(parArgs.Data);
       BinaryFormatter binaryFormatter = new();
@@ -88,8 +81,10 @@ namespace Sokoban.Save
       {
         MusicValue = settingsData.MusicValue,
         SoundValue = settingsData.SoundValue,
+#if !UNITY_PS4
         FullScreenValue = settingsData.FullScreenValue,
         VSyncValue = settingsData.VSyncValue,
+#endif
         CurrentLanguage = settingsData.CurrentLanguage
       };
 
@@ -111,8 +106,10 @@ namespace Sokoban.Save
 
         MusicValue = settingsData.MusicValue,
         SoundValue = settingsData.SoundValue,
+#if !UNITY_PS4
         FullScreenValue = settingsData.FullScreenValue,
         VSyncValue = settingsData.VSyncValue,
+#endif
         CurrentLanguage = settingsData.CurrentLanguage,
 
         #endregion
@@ -146,8 +143,10 @@ namespace Sokoban.Save
 
       settingsData.MusicValue = parData.MusicValue;
       settingsData.SoundValue = parData.SoundValue;
+#if !UNITY_PS4
       settingsData.FullScreenValue = parData.FullScreenValue;
       settingsData.VSyncValue = parData.VSyncValue;
+#endif
       settingsData.CurrentLanguage = parData.CurrentLanguage;
 
       #endregion

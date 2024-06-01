@@ -91,6 +91,7 @@ namespace Sokoban.GameManagement
 
     //======================================
 
+#if !UNITY_PS4
     public void CreateResolutions()
     {
       Resolution[] resolutions = Screen.resolutions;
@@ -139,7 +140,7 @@ namespace Sokoban.GameManagement
 
       Screen.fullScreen = _fullScreenValue;
     }
-    
+
     public void ApplyResolution()
     {
       int width = GetResolution().width;
@@ -154,6 +155,7 @@ namespace Sokoban.GameManagement
     {
       return Resolutions[CurrentSelectedResolution];
     }
+#endif
 
     public FullScreenMode GetFullScreenMode()
     {

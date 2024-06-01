@@ -142,8 +142,7 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1
-  preloadedAssets:
-  - {fileID: 11400000, guid: d20bff3ab10540d46a459d5180ce5464, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -289,7 +288,14 @@ PlayerSettings:
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
   AndroidReportGooglePlayAppDependencies: 1
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: PS4
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 82a1e2c3a7ba4754195ab7641a895667, type: 3}
+      m_Width: 512
+      m_Height: 512
+      m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: Android
     m_Icons:
@@ -646,7 +652,7 @@ PlayerSettings:
   ps4NPAgeRating: 6
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: PS4_Data/trophy/trophy.trp
-  ps4ParentalLevel: 6
+  ps4ParentalLevel: 3
   ps4ContentID: UP8644-CUSA49161_00-GRASSYQPS4EA0000
   ps4Category: 0
   ps4MasterVersion: 01.00
@@ -693,7 +699,7 @@ PlayerSettings:
   resetTempFolder: 1
   restrictedAudioUsageRights: 0
   ps4UseResolutionFallback: 0
-  ps4ReprojectionSupport: 0
+  ps4ReprojectionSupport: 1
   ps4UseAudio3dBackend: 0
   ps4UseLowGarlicFragmentationMode: 1
   ps4SocialScreenEnabled: 0
