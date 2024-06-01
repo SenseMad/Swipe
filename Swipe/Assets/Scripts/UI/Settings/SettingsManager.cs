@@ -56,6 +56,7 @@ namespace Sokoban.UI
       _resolutionValue.OnValueChanged += ResolutionValue_OnValueChanged;
       _vSyncValue.OnValueChanged += VSyncValue_OnValueChanged;
 #else
+      _videoTitle.gameObject.SetActive(false);
       _fullscreenValue.gameObject.SetActive(false);
       _resolutionValue.gameObject.SetActive(false);
       _vSyncValue.gameObject.SetActive(false);
