@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 7_Scarecrow
   m_EditorClassIdentifier: 
   _indexSkin: 7
-  _priceSkin: 50
+  _priceSkin: 10
   _skinSprite: {fileID: 21300000, guid: 7fefdbb59ac813e45b8bc106c9ac7ce4, type: 3}
   _objectSkin: {fileID: 919132149155446097, guid: 308f3c5b9bb81b844817cb15f8a3fad2, type: 3}

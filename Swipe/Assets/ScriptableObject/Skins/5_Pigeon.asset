@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 5_Pigeon
   m_EditorClassIdentifier: 
   _indexSkin: 5
-  _priceSkin: 20
+  _priceSkin: 10
   _skinSprite: {fileID: 21300000, guid: 4f14a91dcd5abbf4395db046a752b759, type: 3}
   _objectSkin: {fileID: 919132149155446097, guid: f7bd37ae4b0f4204fade2854759396e0, type: 3}

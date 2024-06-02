@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 2_Squirrel
   m_EditorClassIdentifier: 
   _indexSkin: 2
-  _priceSkin: 10
+  _priceSkin: 5
   _skinSprite: {fileID: 21300000, guid: f6e7fa1e6735dc54ca156cef7d5fe0f4, type: 3}
   _objectSkin: {fileID: 919132149155446097, guid: 500ae24458e928b4eaadaed7eaef3766, type: 3}

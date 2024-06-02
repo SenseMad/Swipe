@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 4_Parrot
   m_EditorClassIdentifier: 
   _indexSkin: 4
-  _priceSkin: 15
+  _priceSkin: 5
   _skinSprite: {fileID: 21300000, guid: aa798cf6a2bbeca4094217e61e09acb4, type: 3}
   _objectSkin: {fileID: 919132149155446097, guid: 7837bc89ad31f814bba5c500a9138ea3, type: 3}

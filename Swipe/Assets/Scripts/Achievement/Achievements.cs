@@ -39,12 +39,58 @@ namespace Sokoban.Achievement
 
     public void UpdateAchivementChapter()
     {
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 15)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 25)
+        UpdateAchivement(Achievement.CHAPTER_4);
+
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 25)
+        UpdateAchivement(Achievement.CHAPTER_3);
+
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 25)
+        UpdateAchivement(Achievement.CHAPTER_2);
+
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 25)
         UpdateAchivement(Achievement.CHAPTER_1);
     }
     
     public void UpdateAchivementLevels()
     {
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 100)
+        UpdateAchivement(Achievement.LEVEL_100);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 95)
+        UpdateAchivement(Achievement.LEVEL_95);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 90)
+        UpdateAchivement(Achievement.LEVEL_90);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 85)
+        UpdateAchivement(Achievement.LEVEL_85);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 80)
+        UpdateAchivement(Achievement.LEVEL_80);
+
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 75)
+        UpdateAchivement(Achievement.LEVEL_75);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 70)
+        UpdateAchivement(Achievement.LEVEL_70);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 65)
+        UpdateAchivement(Achievement.LEVEL_65);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 60)
+        UpdateAchivement(Achievement.LEVEL_60);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 55)
+        UpdateAchivement(Achievement.LEVEL_55);
+
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 50)
+        UpdateAchivement(Achievement.LEVEL_50);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 45)
+        UpdateAchivement(Achievement.LEVEL_45);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 40)
+        UpdateAchivement(Achievement.LEVEL_40);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 35)
+        UpdateAchivement(Achievement.LEVEL_35);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 30)
+        UpdateAchivement(Achievement.LEVEL_30);
+
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 25)
+        UpdateAchivement(Achievement.LEVEL_25);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 20)
+        UpdateAchivement(Achievement.LEVEL_20);
       if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 15)
         UpdateAchivement(Achievement.LEVEL_15);
       if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 10)
@@ -57,48 +103,27 @@ namespace Sokoban.Achievement
 
     public void UpdateAchivementMove()
     {
-      if (gameManager.ProgressData.TotalNumberMoves >= 2000)
-        UpdateAchivement(Achievement.MOVE_2000);
-      if (gameManager.ProgressData.TotalNumberMoves >= 1500)
-        UpdateAchivement(Achievement.MOVE_1500);
-      if (gameManager.ProgressData.TotalNumberMoves >= 1000)
-        UpdateAchivement(Achievement.MOVE_1000);
-      if (gameManager.ProgressData.TotalNumberMoves >= 750)
-        UpdateAchivement(Achievement.MOVE_750);
-      if (gameManager.ProgressData.TotalNumberMoves >= 500)
-        UpdateAchivement(Achievement.MOVE_500);
+      if (gameManager.ProgressData.TotalNumberMoves >= 250)
+        UpdateAchivement(Achievement.MOVE_250);
+      if (gameManager.ProgressData.TotalNumberMoves >= 200)
+        UpdateAchivement(Achievement.MOVE_200);
+      if (gameManager.ProgressData.TotalNumberMoves >= 150)
+        UpdateAchivement(Achievement.MOVE_150);
       if (gameManager.ProgressData.TotalNumberMoves >= 100)
         UpdateAchivement(Achievement.MOVE_100);
+      if (gameManager.ProgressData.TotalNumberMoves >= 50)
+        UpdateAchivement(Achievement.MOVE_50);
       if (gameManager.ProgressData.TotalNumberMoves >= 25)
         UpdateAchivement(Achievement.MOVE_25);
+      if (gameManager.ProgressData.TotalNumberMoves >= 10)
+        UpdateAchivement(Achievement.MOVE_10);
       if (gameManager.ProgressData.TotalNumberMoves >= 1)
         UpdateAchivement(Achievement.MOVE_1);
     }
 
     public void UpdateAchivementMoveBox()
     {
-      /*if (gameManager.ProgressData.TotalNumberMovesBox >= 1000)
-        UpdateAchivement(Achievement.MOVE_BOX_1000);
-      if (gameManager.ProgressData.TotalNumberMovesBox >= 750)
-        UpdateAchivement(Achievement.MOVE_BOX_750);
-      if (gameManager.ProgressData.TotalNumberMovesBox >= 500)
-        UpdateAchivement(Achievement.MOVE_BOX_500);
-      if (gameManager.ProgressData.TotalNumberMovesBox >= 400)
-        UpdateAchivement(Achievement.MOVE_BOX_400);
-      if (gameManager.ProgressData.TotalNumberMovesBox >= 300)
-        UpdateAchivement(Achievement.MOVE_BOX_300);
-      if (gameManager.ProgressData.TotalNumberMovesBox >= 200)
-        UpdateAchivement(Achievement.MOVE_BOX_200);
-      if (gameManager.ProgressData.TotalNumberMovesBox >= 100)
-        UpdateAchivement(Achievement.MOVE_BOX_100);
-      if (gameManager.ProgressData.TotalNumberMovesBox >= 50)
-        UpdateAchivement(Achievement.MOVE_BOX_50);
-      if (gameManager.ProgressData.TotalNumberMovesBox >= 15)
-        UpdateAchivement(Achievement.MOVE_BOX_15);
-      if (gameManager.ProgressData.TotalNumberMovesBox >= 5)
-        UpdateAchivement(Achievement.MOVE_BOX_5);
-      if (gameManager.ProgressData.TotalNumberMovesBox >= 1)
-        UpdateAchivement(Achievement.MOVE_BOX_1);*/
+
     }
 
     public void UpdateAchivementBuySkin()
@@ -125,24 +150,24 @@ namespace Sokoban.Achievement
 
     public void UpdateAchivementFood()
     {
-      if (gameManager.ProgressData.TotalFoodCollected >= 500)
-        UpdateAchivement(Achievement.COLLECT_EAT_500);
-      if (gameManager.ProgressData.TotalFoodCollected >= 400)
-        UpdateAchivement(Achievement.COLLECT_EAT_400);
-      if (gameManager.ProgressData.TotalFoodCollected >= 300)
-        UpdateAchivement(Achievement.COLLECT_EAT_300);
-      if (gameManager.ProgressData.TotalFoodCollected >= 200)
-        UpdateAchivement(Achievement.COLLECT_EAT_200);
-      if (gameManager.ProgressData.TotalFoodCollected >= 100)
-        UpdateAchivement(Achievement.COLLECT_EAT_100);
+      if (gameManager.ProgressData.TotalFoodCollected >= 85)
+        UpdateAchivement(Achievement.COLLECT_EAT_85);
       if (gameManager.ProgressData.TotalFoodCollected >= 75)
         UpdateAchivement(Achievement.COLLECT_EAT_75);
-      if (gameManager.ProgressData.TotalFoodCollected >= 50)
-        UpdateAchivement(Achievement.COLLECT_EAT_50);
+      if (gameManager.ProgressData.TotalFoodCollected >= 65)
+        UpdateAchivement(Achievement.COLLECT_EAT_65);
+      if (gameManager.ProgressData.TotalFoodCollected >= 55)
+        UpdateAchivement(Achievement.COLLECT_EAT_55);
+      if (gameManager.ProgressData.TotalFoodCollected >= 45)
+        UpdateAchivement(Achievement.COLLECT_EAT_45);
+      if (gameManager.ProgressData.TotalFoodCollected >= 35)
+        UpdateAchivement(Achievement.COLLECT_EAT_35);
       if (gameManager.ProgressData.TotalFoodCollected >= 25)
         UpdateAchivement(Achievement.COLLECT_EAT_25);
       if (gameManager.ProgressData.TotalFoodCollected >= 15)
         UpdateAchivement(Achievement.COLLECT_EAT_15);
+      if (gameManager.ProgressData.TotalFoodCollected >= 10)
+        UpdateAchivement(Achievement.COLLECT_EAT_10);
       if (gameManager.ProgressData.TotalFoodCollected >= 5)
         UpdateAchivement(Achievement.COLLECT_EAT_5);
       if (gameManager.ProgressData.TotalFoodCollected >= 1)
@@ -156,7 +181,6 @@ namespace Sokoban.Achievement
       if (gameManager.PlatformManager.Achievements != null &&
         gameManager.PlatformManager.LocalUserProfiles != null)
       {
-<<<<<<< Updated upstream
         var userId = gameManager.PlatformManager.LocalUserProfiles.GetPrimaryLocalUserId();
 
         var progress = gameManager.PlatformManager.Achievements.GetAchievementProgress(userId, parAchievement);
@@ -183,9 +207,8 @@ namespace Sokoban.Achievement
           $"PlatformManager = {gameManager.PlatformManager}, " +
           $"Achievements = {gameManager.PlatformManager?.Achievements}, " +
           $"LocalUserProfiles = {gameManager.PlatformManager?.LocalUserProfiles} ");
-=======
+
         gameManager.PlatformManager.Achievements.UnlockAchievement(gameManager.PlatformManager.LocalUserProfiles.GetPrimaryLocalUserId(), parAchievement);
->>>>>>> Stashed changes
       }
     }
 
