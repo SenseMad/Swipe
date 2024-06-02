@@ -77,7 +77,7 @@ namespace Sokoban.Achievement
 
     public void UpdateAchivementMoveBox()
     {
-      if (gameManager.ProgressData.TotalNumberMovesBox >= 1000)
+      /*if (gameManager.ProgressData.TotalNumberMovesBox >= 1000)
         UpdateAchivement(Achievement.MOVE_BOX_1000);
       if (gameManager.ProgressData.TotalNumberMovesBox >= 750)
         UpdateAchivement(Achievement.MOVE_BOX_750);
@@ -98,33 +98,11 @@ namespace Sokoban.Achievement
       if (gameManager.ProgressData.TotalNumberMovesBox >= 5)
         UpdateAchivement(Achievement.MOVE_BOX_5);
       if (gameManager.ProgressData.TotalNumberMovesBox >= 1)
-        UpdateAchivement(Achievement.MOVE_BOX_1);
+        UpdateAchivement(Achievement.MOVE_BOX_1);*/
     }
 
     public void UpdateAchivementBuySkin()
     {
-      /*if (gameManager.ProgressData.PurchasedSkins.Count >= 10)
-      {
-        UpdateAchivement(Achievement.BUY_SKIN_10);
-        UpdateAchivement(Achievement.BUY_ALL_SKINS);
-      }
-      if (gameManager.ProgressData.PurchasedSkins.Count >= 9)
-        UpdateAchivement(Achievement.BUY_SKIN_9);
-      if (gameManager.ProgressData.PurchasedSkins.Count >= 8)
-        UpdateAchivement(Achievement.BUY_SKIN_8);
-      if (gameManager.ProgressData.PurchasedSkins.Count >= 7)
-        UpdateAchivement(Achievement.BUY_SKIN_7);
-      if (gameManager.ProgressData.PurchasedSkins.Count >= 6)
-        UpdateAchivement(Achievement.BUY_SKIN_6);
-      if (gameManager.ProgressData.PurchasedSkins.Count >= 5)
-        UpdateAchivement(Achievement.BUY_SKIN_5);
-      if (gameManager.ProgressData.PurchasedSkins.Count >= 4)
-        UpdateAchivement(Achievement.BUY_SKIN_4);
-      if (gameManager.ProgressData.PurchasedSkins.Count >= 3)
-        UpdateAchivement(Achievement.BUY_SKIN_3);
-      if (gameManager.ProgressData.PurchasedSkins.Count >= 2)
-        UpdateAchivement(Achievement.BUY_SKIN_2);*/
-
       if (gameManager.ProgressData.PurchasedSkins.Contains(9))
         UpdateAchivement(Achievement.BUY_SKIN_10);
       if (gameManager.ProgressData.PurchasedSkins.Contains(8))
@@ -178,6 +156,7 @@ namespace Sokoban.Achievement
       if (gameManager.PlatformManager.Achievements != null &&
         gameManager.PlatformManager.LocalUserProfiles != null)
       {
+<<<<<<< Updated upstream
         var userId = gameManager.PlatformManager.LocalUserProfiles.GetPrimaryLocalUserId();
 
         var progress = gameManager.PlatformManager.Achievements.GetAchievementProgress(userId, parAchievement);
@@ -204,6 +183,9 @@ namespace Sokoban.Achievement
           $"PlatformManager = {gameManager.PlatformManager}, " +
           $"Achievements = {gameManager.PlatformManager?.Achievements}, " +
           $"LocalUserProfiles = {gameManager.PlatformManager?.LocalUserProfiles} ");
+=======
+        gameManager.PlatformManager.Achievements.UnlockAchievement(gameManager.PlatformManager.LocalUserProfiles.GetPrimaryLocalUserId(), parAchievement);
+>>>>>>> Stashed changes
       }
     }
 

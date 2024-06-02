@@ -85,7 +85,7 @@ namespace Sokoban.UI
 
     private void UpdateTextLevelNumber()
     {
-      _textLevelNumber.text = $"Level {levelManager.GetCurrentLevelData().LevelNumber}";
+      _textLevelNumber.text = $"{UpdateText("LEVEL_KEY")} {levelManager.GetCurrentLevelData().LevelNumber}";
     }
 
     private void UpdateTextNumberMoves()
@@ -98,6 +98,19 @@ namespace Sokoban.UI
       ExitMenu();
 
       Sound();
+    }
+
+    private string UpdateText(string parKey)
+    {
+      if (parKey == "") { return ""; }
+
+      var localisationSystem = LocalisationSystem.Instance;
+      string value = localisationSystem.GetLocalisedValue(parKey);
+
+      value = value.TrimStart(' ', '"');
+      value = value.Replace("\"", "");
+
+      return value;
     }
 
     //======================================

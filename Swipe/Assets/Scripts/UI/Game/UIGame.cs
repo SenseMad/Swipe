@@ -68,7 +68,7 @@ namespace Sokoban.UI
       if (_textLevelNumber == null)
         return;
 
-      _textLevelNumber.text = $"LEVEL {GetNumberLocation(parLevelData)}-{parLevelData.LevelNumber}";
+      _textLevelNumber.text = $"{UpdateText("LEVEL_KEY")} {GetNumberLocation(parLevelData)}-{parLevelData.LevelNumber}";
     }
 
     private void UpdateTextTimeLevel(float parValue)
@@ -100,6 +100,19 @@ namespace Sokoban.UI
       _objectNumberMoves.SetActive(parValue);
 
       _topCameraRotate.SetActive(parValue);
+    }
+
+    private string UpdateText(string parKey)
+    {
+      if (parKey == "") { return ""; }
+
+      var localisationSystem = LocalisationSystem.Instance;
+      string value = localisationSystem.GetLocalisedValue(parKey);
+
+      value = value.TrimStart(' ', '"');
+      value = value.Replace("\"", "");
+
+      return value;
     }
 
     //======================================
