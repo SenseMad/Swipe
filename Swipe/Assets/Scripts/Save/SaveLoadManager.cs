@@ -6,8 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using Sokoban.GameManagement;
 using Alekrus.UnivarsalPlatform.SaveLoad;
 using Alekrus.UnivarsalPlatform;
-using Sony.PS4.SavedGame;
-using UnityEngine.SocialPlatforms.Impl;
+using System;
 
 namespace Sokoban.Save
 {
@@ -23,29 +22,46 @@ namespace Sokoban.Save
 
     public void SaveData()
     {
-      if (SaveLoad == null)
-        return;
+      Debug.Log($"[{typeof(SaveLoadManager)}] SaveData()");
 
-      GameData data = GameData();
-
-      MemoryStream memoryStream = new();
-      BinaryFormatter binaryFormatter = new();
-      binaryFormatter.Serialize(memoryStream, data);
-
-      GameSlotDetails gameSlotDetails = new()
+      try
       {
-        Title = "Sokoban SaveData",
-        SubTitle = "Your game progress",
-        Detail = "This is where your suffering is stored!"
-      };
+        if (SaveLoad == null)
+        {
+          Debug.LogError($"[{typeof(SaveLoadManager)}] SaveData : saveLoad = null!");
+          return;
+        }
 
-      SaveLoad.Save(LocalUser, memoryStream.GetBuffer(), gameSlotDetails);
+        GameData data = GameData();
+
+        MemoryStream memoryStream = new();
+        BinaryFormatter binaryFormatter = new();
+        binaryFormatter.Serialize(memoryStream, data);
+
+        GameSlotDetails gameSlotDetails = new()
+        {
+          Title = "GRASSY QUEST SaveData",
+          SubTitle = "Your game progress",
+          Detail = "This is where your suffering is stored!"
+        };
+
+        SaveLoad.Save(LocalUser, memoryStream.GetBuffer(), gameSlotDetails);
+      }
+      catch (Exception e)
+      {
+        Debug.LogError($"[{typeof(SaveLoadManager)}] Error SaveData : {e.Message}");
+      }
     }
 
     public void LoadData()
     {
+      Debug.Log($"[{typeof(SaveLoadManager)}] LoadData()");
+
       if (SaveLoad == null)
+      {
+        Debug.LogError($"[{typeof(SaveLoadManager)}] LoadData : saveLoad = null!");
         return;
+      }
 
       SaveLoad.GameLoaded += UserSaveLoad_GameLoaded;
 
@@ -56,11 +72,25 @@ namespace Sokoban.Save
     {
       SaveLoad.GameLoaded -= UserSaveLoad_GameLoaded;
 
-      MemoryStream input = new(parArgs.Data);
-      BinaryFormatter binaryFormatter = new();
-      GameData data = (GameData)binaryFormatter.Deserialize(input);
+      try
+      {
+        if (parArgs.Data == null)
+        {
+          Debug.LogError($"[{typeof(SaveLoadManager)}] UserSaveLoad_GameLoaded : Load Data = null!");
+          return;
+        }
+        Debug.Log($"[{typeof(SaveLoadManager)}] Load Data = {parArgs.Data}");
 
-      SetGameData(data);
+        MemoryStream input = new(parArgs.Data);
+        BinaryFormatter binaryFormatter = new();
+        GameData data = (GameData)binaryFormatter.Deserialize(input);
+
+        SetGameData(data);
+      }
+      catch (Exception e)
+      {
+        Debug.LogError($"[{typeof(SaveLoadManager)}] Error UserSaveLoad_GameLoaded : {e.Message}");
+      }
     }
 
     //======================================

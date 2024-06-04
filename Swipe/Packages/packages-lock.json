@@ -14,7 +14,7 @@
       "dependencies": {
         "com.alekrus.universal-platform": "0.2.0"
       },
-      "hash": "6b4038fd2ddb86f44be7070edd221082bfabb646"
+      "hash": "8687a624dba9960008604bfd177c9a36b022a4a5"
     },
     "com.alekrus.universal-platform.steam": {
       "version": "https://github.com/SnagBox-Games/com.alekrus.universal-platform.steam.git",
@@ -63,6 +63,12 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
+    },
+    "com.unity.commondialog.ps4": {
+      "version": "file:D:/Projects/SnagBox/PlayStation4/com.unity.commondialog.ps4-1.0.6.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {}
     },
     "com.unity.editorcoroutines": {
       "version": "1.0.0",
@@ -126,11 +132,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.inputsystem.ps4": {
-      "version": "file:D:/Projects/SnagBox/PlayStation4/com.unity.inputsystem.ps4-0.1.3-preview.tgz",
+      "version": "file:D:/Projects/SnagBox/PlayStation4/com.unity.inputsystem.ps4-0.1.8-pre.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.unity.inputsystem": "1.0.0-preview.1"
+        "com.unity.inputsystem": "1.6.1"
       }
     },
     "com.unity.mathematics": {
@@ -139,6 +145,12 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
+    },
+    "com.unity.nptoolkit2.ps4": {
+      "version": "file:D:/Projects/SnagBox/PlayStation4/com.unity.nptoolkit2.ps4-1.0.5.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {}
     },
     "com.unity.performance.profile-analyzer": {
       "version": "1.2.2",
@@ -164,6 +176,12 @@
         "com.unity.timeline": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "com.unity.savedata.ps4": {
+      "version": "file:D:/Projects/SnagBox/PlayStation4/com.unity.savedata.ps4-1.0.5.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {}
     },
     "com.unity.settings-manager": {
       "version": "2.0.1",

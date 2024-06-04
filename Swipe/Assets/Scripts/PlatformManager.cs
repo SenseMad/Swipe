@@ -4,7 +4,7 @@ using Alekrus.UnivarsalPlatform.Achievements;
 using Alekrus.UnivarsalPlatform.SaveLoad;
 using UnityEngine;
 
-public class PlatformManager : IInitializable
+public class PlatformManager
 {
   public IMain Main { get; private set; }
 
@@ -18,10 +18,6 @@ public class PlatformManager : IInitializable
 
   public event InitializedEventHandler Initialized;
   public event ShutdownedEventHandler Shutdowned;
-
-  //======================================
-
-  public bool IsInitialized => Achievements.IsInitialized;
 
   //======================================
 

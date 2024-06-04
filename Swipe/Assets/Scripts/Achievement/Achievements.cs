@@ -207,8 +207,6 @@ namespace Sokoban.Achievement
           $"PlatformManager = {gameManager.PlatformManager}, " +
           $"Achievements = {gameManager.PlatformManager?.Achievements}, " +
           $"LocalUserProfiles = {gameManager.PlatformManager?.LocalUserProfiles} ");
-
-        gameManager.PlatformManager.Achievements.UnlockAchievement(gameManager.PlatformManager.LocalUserProfiles.GetPrimaryLocalUserId(), parAchievement);
       }
     }
 
