@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18df4a0debde4794ca7f91c158db60e8, type: 3}
   m_Name: PS4_InitParams
   m_EditorClassIdentifier: 
-  DefaultAgeRestriction: 0
-  ApplyContentRestriction: 0
+  DefaultAgeRestriction: 6
+  ApplyContentRestriction: 1
   AgeRestrictions: []
   ThreadSettingsAffinity: 60
   ToolkitPoolSize: 16777216
