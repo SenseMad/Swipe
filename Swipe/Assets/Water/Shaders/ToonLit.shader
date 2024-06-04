@@ -54,7 +54,7 @@
 
             float4 frag (v2f i) : SV_Target
             {
-				float NdotL = dot(i.worldNormal, _WorldSpaceLightPos0);
+				float NdotL = dot(i.worldNormal, fixed3(1,1,1) * _WorldSpaceLightPos0);
 				float light = saturate(floor(NdotL * 3) / (2 - 0.5)) * _LightColor0;
 
                 float4 col = tex2D(_MainTex, i.uv);

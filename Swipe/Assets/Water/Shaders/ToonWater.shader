@@ -142,7 +142,7 @@
 				// Larger differences allow for extra foam to attempt to keep the overall
 				// amount consistent.
 				float3 normalDot = saturate(dot(existingNormal, i.viewNormal));
-				float foamDistance = lerp(_FoamMaxDistance, _FoamMinDistance, normalDot);
+				float foamDistance = lerp(fixed4(1, 1, 1, 1) * _FoamMaxDistance, fixed4(1, 1, 1, 1) * _FoamMinDistance, fixed4(1, 1, 1, 1) * normalDot);
 				float foamDepthDifference01 = saturate(depthDifference / foamDistance);
 
 				float surfaceNoiseCutoff = foamDepthDifference01 * _SurfaceNoiseCutoff;
