@@ -403,8 +403,8 @@ namespace Sokoban.LevelManagement
       gameManager.ProgressData.SaveProgressLevelData(_currentLevelProgressData, _currentLevelData.Location, _currentLevelData.LevelNumber);
 
       gameManager.ProgressData.OpenNextLevel(_currentLevelData.Location, _currentLevelData.LevelNumber);
-      //gameManager.Achievements.UpdateAchivementLevels();
-      //gameManager.Achievements.UpdateAchivementChapter();
+      gameManager.Achievements.UpdateAchivementLevels();
+      gameManager.Achievements.UpdateAchivementChapter();
 
       gameManager.SaveData();
     }
