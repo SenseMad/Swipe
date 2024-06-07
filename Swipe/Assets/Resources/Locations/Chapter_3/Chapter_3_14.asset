@@ -69,6 +69,9 @@ MonoBehaviour:
     _positionObject: {x: 6, y: 0, z: 7}
   - _typeObject: 3
     _indexObject: 0
+    _positionObject: {x: 6, y: 0, z: 8}
+  - _typeObject: 3
+    _indexObject: 0
     _positionObject: {x: 6, y: 0, z: 9}
   - _typeObject: 3
     _indexObject: 0
@@ -84,7 +87,7 @@ MonoBehaviour:
     _positionObject: {x: 6, y: 0, z: 13}
   - _typeObject: 1
     _indexObject: 0
-    _positionObject: {x: 6, y: 1, z: 4}
+    _positionObject: {x: 6, y: 1, z: 7}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 7, y: 0, z: 5}
@@ -109,6 +112,9 @@ MonoBehaviour:
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 8, y: 0, z: 9}
+  - _typeObject: 3
+    _indexObject: 0
+    _positionObject: {x: 8, y: 0, z: 10}
   - _typeObject: 3
     _indexObject: 0
     _positionObject: {x: 8, y: 0, z: 11}

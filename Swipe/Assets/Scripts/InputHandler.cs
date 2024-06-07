@@ -16,8 +16,8 @@ public class InputHandler : SingletonInGame<InputHandler>
   {
     base.Awake();
 
-    Cursor.visible = false;
-    Cursor.lockState = CursorLockMode.Locked;
+    /*Cursor.visible = false;
+    Cursor.lockState = CursorLockMode.Locked;*/
 
     AI_Player = new AI_Player();
 
