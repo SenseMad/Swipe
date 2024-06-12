@@ -146,6 +146,7 @@ namespace Sokoban.UI
       }
 
       gameManager.ProgressData.PurchasedSkins.Add(parSkinData.IndexSkin);
+      gameManager.Achievements.UpdateAchivementBuySkin();
 
       parShopButton.UnSelect();
 
