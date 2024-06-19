@@ -168,12 +168,16 @@ namespace Sokoban.LevelManagement
     {
       OnLevelCompleted += LevelManager_OnLevelCompleted;
       difficultyGame.OnLevelFailed += DifficultyGame_OnLevelFailed;
+
+      //InputHandler.Instance.AI_Player.Player.Test.performed += Test_performed;
     }
 
     private void OnDisable()
     {
       OnLevelCompleted -= LevelManager_OnLevelCompleted;
       difficultyGame.OnLevelFailed -= DifficultyGame_OnLevelFailed;
+
+      //InputHandler.Instance.AI_Player.Player.Test.performed += Test_performed;
     }
 
     //======================================
@@ -417,53 +421,65 @@ namespace Sokoban.LevelManagement
 
     //======================================
 
-    /*private void Test()
+    /*public int test = 1;
+    public Location loc;
+
+    private void Test_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) + 1 >= 25)
-        Debug.Log($"4-25: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) + 1 >= 20)
-        Debug.Log($"4-20: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) + 1 >= 15)
-        Debug.Log($"4-15: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) + 1 >= 10)
-        Debug.Log($"4-10: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) + 1 >= 5)
-        Debug.Log($"4-5: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4)}");
+      gameManager.ProgressData.OpenNextLevel(loc, test);
 
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) + 1 >= 25)
-        Debug.Log($"3-25: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) + 1 >= 20)
-        Debug.Log($"3-20: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) + 1 >= 15)
-        Debug.Log($"3-15: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) + 1 >= 10)
-        Debug.Log($"3-10: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) + 1 >= 5)
-        Debug.Log($"3-5: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3)}");
+      test++;
 
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) + 1 >= 25)
-        Debug.Log($"2-25: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) + 1 >= 20)
-        Debug.Log($"2-20: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) + 1 >= 15)
-        Debug.Log($"2-15: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) + 1 >= 10)
-        Debug.Log($"2-10: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) + 1 >= 5)
-        Debug.Log($"2-5: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2)}");
+      Test();
+    }
 
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) + 1 + 1 >= 25)
-        Debug.Log($"1-25: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) + 1 >= 20)
-        Debug.Log($"1-20: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) + 1 >= 15)
-        Debug.Log($"1-15: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) + 1 >= 10)
-        Debug.Log($"1-10: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) + 1 >= 5)
-        Debug.Log($"1-5: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1)}");
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) + 1 >= 1)
-        Debug.Log($"1-1: {gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1)}");
+    private void Test()
+    {
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 24)
+        Debug.Log($"4-24");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 23)
+        Debug.Log($"4-23");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 18)
+        Debug.Log($"4-18");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 13)
+        Debug.Log($"4-13");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 8)
+        Debug.Log($"4-8");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 3)
+        Debug.Log($"4-3");
+
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 22)
+        Debug.Log($"3-22");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 17)
+        Debug.Log($"3-17");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 12)
+        Debug.Log($"3-12");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 7)
+        Debug.Log($"3-7");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 2)
+        Debug.Log($"3-2");
+
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 21)
+        Debug.Log($"2-21");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 16)
+        Debug.Log($"2-16");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 11)
+        Debug.Log($"2-11");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 6)
+        Debug.Log($"2-6");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 1)
+        Debug.Log($"2-1");
+
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 20)
+        Debug.Log($"1-20");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 15)
+        Debug.Log($"1-15");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 10)
+        Debug.Log($"1-10");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 5)
+        Debug.Log($"1-5");
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 1)
+        Debug.Log($"1-1");
     }*/
   }
 }

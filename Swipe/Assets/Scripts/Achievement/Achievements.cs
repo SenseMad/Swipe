@@ -39,56 +39,56 @@ namespace Sokoban.Achievement
 
     public void UpdateAchivementChapter()
     {
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 25)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 24)
         UpdateAchivement(Achievement.CHAPTER_4);
 
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 25)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 24)
         UpdateAchivement(Achievement.CHAPTER_3);
 
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 25)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 24)
         UpdateAchivement(Achievement.CHAPTER_2);
 
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 25)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 24)
         UpdateAchivement(Achievement.CHAPTER_1);
     }
     
     public void UpdateAchivementLevels()
     {
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) + 1 >= 25)
-        UpdateAchivement(Achievement.LEVEL_100);
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) + 1 >= 20)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 24)
+        UpdateAchivement(Achievement.LEVEL_96);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 23)
         UpdateAchivement(Achievement.LEVEL_95);
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) + 1 >= 15)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 18)
         UpdateAchivement(Achievement.LEVEL_90);
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) + 1 >= 10)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 13)
         UpdateAchivement(Achievement.LEVEL_85);
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) + 1 >= 5)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 8)
         UpdateAchivement(Achievement.LEVEL_80);
-
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) + 1 >= 25)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_4) >= 3)
         UpdateAchivement(Achievement.LEVEL_75);
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) + 1 >= 20)
+
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 22)
         UpdateAchivement(Achievement.LEVEL_70);
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) + 1 >= 15)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 17)
         UpdateAchivement(Achievement.LEVEL_65);
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) + 1 >= 10)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 12)
         UpdateAchivement(Achievement.LEVEL_60);
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) + 1 >= 5)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 7)
         UpdateAchivement(Achievement.LEVEL_55);
-
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) + 1 >= 25)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_3) >= 2)
         UpdateAchivement(Achievement.LEVEL_50);
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) + 1 >= 20)
-        UpdateAchivement(Achievement.LEVEL_45);
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) + 1 >= 15)
-        UpdateAchivement(Achievement.LEVEL_40);
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) + 1 >= 10)
-        UpdateAchivement(Achievement.LEVEL_35);
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) + 1 >= 5)
-        UpdateAchivement(Achievement.LEVEL_30);
 
-      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) + 1 >= 25)
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 21)
+        UpdateAchivement(Achievement.LEVEL_45);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 16)
+        UpdateAchivement(Achievement.LEVEL_40);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 11)
+        UpdateAchivement(Achievement.LEVEL_35);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 6)
+        UpdateAchivement(Achievement.LEVEL_30);
+      if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_2) >= 1)
         UpdateAchivement(Achievement.LEVEL_25);
+
       if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 20)
         UpdateAchivement(Achievement.LEVEL_20);
       if (gameManager.ProgressData.GetNumberLevelsCompleted(Location.Chapter_1) >= 15)

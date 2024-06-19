@@ -41,7 +41,7 @@ namespace Sokoban.Achievement
     LEVEL_85 = 35,
     LEVEL_90 = 36,
     LEVEL_95 = 37,
-    LEVEL_100 = 38,
+    LEVEL_96 = 38,
 
     CHAPTER_1 = 39,
     CHAPTER_2 = 40,
