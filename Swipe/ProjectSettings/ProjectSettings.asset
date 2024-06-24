@@ -142,7 +142,8 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: d20bff3ab10540d46a459d5180ce5464, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -652,10 +653,10 @@ PlayerSettings:
   ps4NPAgeRating: 6
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: PS4_Data/trophy/trophy.trp
-  ps4ParentalLevel: 2
-  ps4ContentID: HP8594-CUSA49164_00-GRASSYQPS4JAA000
+  ps4ParentalLevel: 3
+  ps4ContentID: UP8644-CUSA49161_00-GRASSYQPS4EA0000
   ps4Category: 0
-  ps4MasterVersion: 01.01
+  ps4MasterVersion: 01.02
   ps4AppVersion: 01.00
   ps4AppType: 0
   ps4ParamSfxPath: 
@@ -676,7 +677,7 @@ PlayerSettings:
   ps4ShareOverlayImagePath: 
   ps4PrivacyGuardImagePath: 
   ps4ExtraSceSysFile: 
-  ps4NPtitleDatPath: PS4_Data/JAA CUSA49164_00/nptitle.dat
+  ps4NPtitleDatPath: PS4_Data/SIEA CUSA49161_00/nptitle.dat
   ps4RemotePlayKeyAssignment: -1
   ps4RemotePlayKeyMappingDir: 
   ps4PlayTogetherPlayerCount: 0
